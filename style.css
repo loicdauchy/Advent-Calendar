@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+}
+#calendar{
+    width: 60%;
+    min-height: 80vh;
+    border: 1px solid black;
+    background: url(img/tree.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width:700px){
+    #calendar{
+        width: 80%;
+    }
+}
+
+.case{
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+    background: white;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+h4 {
+    font-size: 4rem;
+    position: absolute;
+    color: rgb(226, 37, 37);
+}
+
+p {
+    text-align:center;
+    opacity: 0%;
+}
+
+.show{
+    opacity: 100% !important;
+    transition: linear 1s;
+}
+.hide{
+    opacity: 0% !important;
+    transition: linear 1s;
+}
