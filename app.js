@@ -26,7 +26,7 @@ function shuffle(array) {
 
 var calen = shuffle(calendrier);
 
-calendar.innerHTML = calen;
+calendar.innerHTML = calen.join('');
 
 var localCalenGet = localStorage.getItem('');
     if(localCalenGet !== null){   
@@ -204,7 +204,7 @@ document.getElementById('case7').addEventListener('click', function(){
         document.getElementById('c7').classList.add("show");
         localStorage.setItem('jour7', 'v7');
         if(localCalenGet === null){
-            localStorage.setItem('', calen);
+            localStorage.setItem('', calen.join(''));
             }  
     }
 })
