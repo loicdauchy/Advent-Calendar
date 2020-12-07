@@ -12,6 +12,7 @@ function shuffle(array) {
     }
     return array;
   }
+
 var calendrier = new Array();
 calendrier[0]= "<div id='1'class='case'></div>";calendrier[1]= "<div id='2'class='case'></div>";calendrier[2]= "<div id='3'class='case'></div>";
 calendrier[3]= "<div id='4'class='case'></div>";calendrier[4]= "<div id='5'class='case'></div>";calendrier[5]= "<div id='6'class='case'></div>";

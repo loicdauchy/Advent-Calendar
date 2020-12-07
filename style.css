@@ -3,12 +3,14 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 98vh;
+    background: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 #calendar{
-    width: 40%;
-    min-height: 80vh;
-    border: 1px solid black;
-    background: url(img/tree.jpg);
+    width: 100%;
+    min-height: 60vh;
+    background: transparent;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -23,16 +25,15 @@ body{
 }
 
 .case{
-    width: 120px;
-    height: 120px;
-    border: 1px solid black;
-    background: white;
-    margin: 20px;
+    width: 180px;
+    height: 180px;
+    border: 1px solid white;
+    background: rgba(255,255,255,0.3);  
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
 }
 
 h4 {
@@ -44,6 +45,7 @@ h4 {
 p {
     text-align:center;
     opacity: 0%;
+    color: white;
 }
 
 .show{
@@ -53,4 +55,8 @@ p {
 .hide{
     opacity: 0% !important;
     transition: linear 1s;
+}
+
+.check{
+    background: rgba(4, 250, 4, 0.308);
 }
