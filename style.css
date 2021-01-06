@@ -2,32 +2,30 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 98vh;
     background: url(img/bg.jpg);
     background-size: cover;
     background-position: center;
 }
 #calendar{
-    width: 100%;
+    width: 90%;
     min-height: 60vh;
     background: transparent;
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    position: absolute;
+    transform-origin: center;
+    left: 10%;
 }
-@media (max-width:700px){
-    #calendar{
-        width: 80%;
-    }
-}
-
 .case{
     width: 180px;
     height: 180px;
-    border: 1px solid white;
+    border: 1px dotted white;
     background: rgba(255,255,255,0.3);  
     cursor: pointer;
     display: flex;
@@ -51,6 +49,7 @@ p {
 .show{
     opacity: 100% !important;
     transition: linear 1s;
+    z-index: 10 !important;
 }
 .hide{
     opacity: 0% !important;
@@ -59,4 +58,56 @@ p {
 
 .check{
     background: rgba(4, 250, 4, 0.308);
+}
+.bxs-gift{
+    color: rgb(214, 54, 54);
+    font-size: 4rem;
+    transition:linear 0.2s;
+}
+.bxs-gift:hover{
+    font-size: 6rem;
+    transition:linear 0.2s;
+}
+#modals{
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    border-radius: 10px 10px 10px 10px;
+    background: white;
+    opacity: 0;
+    z-index: -10;
+}
+.modalsContent{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 3rem;
+    color: rgba(4, 250, 4, 0.8);
+    cursor: pointer;
+}
+#modals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgGift{
+   max-width: 90%;
+   max-height: 95%;
+}
+@media (max-width:700px){
+    .case{
+        width: 100px;
+        height: 100px;
+    }
+}
+h2{
+    font-size: 4rem;
+    color: aliceblue;
 }
